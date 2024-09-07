@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Weather App</title>
+  <link rel="stylesheet" href="font/Rimouski.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Application Title -->
+    <header class="app-title">
+      <h1>Weather App</h1>
+    </header>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name...">
+      <button id="search-button">Search</button>
+    </div>
+
+    <!-- Notification Section -->
+    <div class="notification" style="display: none;">
+      <p id="notification-message"></p>
+    </div>
+
+    <!-- Weather Information Container -->
+    <section class="weather-container">
+      <div class="weather-icon">
+        <img src="icons/unknown.png" alt="Weather Icon" id="weather-icon">
+      </div>
+
+      <div class="temperature-value">
+        <p id="temperature">--°<span>C</span></p>
+      </div>
+
+      <div class="temperature-description">
+        <p id="description">--</p>
+      </div>
+
+      <div class="additional-info">
+        <p>Humidity: <span id="humidity">--</span>%</p>
+        <p>Wind Speed: <span id="wind-speed">--</span> m/s</p>
+        <p>Sunrise: <span id="sunrise">--</span></p>
+        <p>Sunset: <span id="sunset">--</span></p>
+      </div>
+
+      <div class="location">
+        <p id="location">--</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
